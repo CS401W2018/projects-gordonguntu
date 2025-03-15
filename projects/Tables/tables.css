@@ -20,14 +20,35 @@ aside{
 
     border: 2px solid red;
 border-radius: 10px;
+
+
+
     
 
 }
 
+aside{
+    margin: 80px;
+    border: thin solid ;
+    box-shadow: 0px 3px 8px;
+    background-color: rgb(57, 57, 244);
+    color: white;
+    box-sizing: content-box;
+}
+
+.ipl tr:nth-child(even){
+    background-color: rgb(164, 164, 251);
+}
+
+.ipl tr:nth-child(odd){
+    background-color: rgb(241, 62, 62);
+}
 .ipl th{
     font-style:italic;
     border-bottom: solid blue;
     border-radius: 10px;
+    background-color: brown;
+    padding: 10px;
 }
 
 .ipl td{
