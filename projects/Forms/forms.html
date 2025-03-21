@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header> 
+        <h1>Web Design</h1>
+    </header>
+    <nav>
+        <a href="#">Link</a> <a href="#">Link</a> 
+        <a href="#">Link</a> <a href="#">Link</a> 
+        <a href="#">Link</a> <a href="#">Link</a> 
+    </nav>
+    <main>
+        <form action="" method="get">
+            <fieldset>
+                <legend> IPL Registration </legend>
+             <div class="form-row">
+                    <label for="Fullname"> Name:</label>
+                    <input type="text" name="Fullname" id="fullname" placeholder="Fullname">
+             </div>
+             <div class="form-row">
+                    <label for="">Email:</label>
+                    <input type="email" name="email" placeholder="gordon@gmail.com" id="email">
+             </div>
+             <div class="form-row">
+                    <label for="Phone"> Phone</label>
+                    <input type="number" name="Phone" id="Phone" required>
+
+             </div>
+             <div class="form-row">
+                    <div class="form-spacer">Gender:</div>
+                    <input type="radio" name="Gender" value="Male"> Male
+                    <input type="radio" value="Female"> Female
+             </div>
+             <div class="form-row">
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date">
+             </div>
+             <div class="form-row">
+                    <label for="City">City</label>
+                    <select name="City" id="City">
+                        <option value="Blank"></option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value="Chennai"> Chennai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Kolkata">Kolkata</option>
+                    </select>
+             </div>
+             <div class="form-row">
+                 <label for="password"> Create Password:</label>
+                 <input type="password" name="password" id="password">
+             </div>
+             <div class="form-row">
+                <label for="password"> Confirm Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+             <div class="form-row">
+                <label for="expectations">Expectation: </label>
+                <textarea name="expectations" id="expectations"></textarea>
+             </div>
+             <div class="form-row">
+                <div class="form-spacer"></div>
+                <label>
+                    <input type="checkbox"> I agree to the terms and conditions
+                </label>
+             </div>
+             <div class="form-row">
+                <label for="submit"></label>
+                <input class="submit" type="submit" name="submit">
+             </div>
+
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        &copy; Gordon Guntu 2025
+    </footer>
+</body>
+</html>
