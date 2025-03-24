@@ -9,12 +9,12 @@
 <body>
     <header> <h1> Web Design</h1></header>
     <main>
-        <form action="processing.html" method="get">
+        <form action="processing.html" method="get" id="myForm">
             <fieldset>
                 <legend>Account Info</legend>
                 <div class="form-row">
                     <label for="Full name">Name:</label>
-                <input type="text" name="fullname" placeholder="Full Name" id="Full name"> 
+                <input type="text" name="fullname" placeholder="Full Name" id="fullname"> 
                 </div>
                 <div class="form-row">
                     <label for="email">Email:</label>
@@ -54,6 +54,7 @@
                 </div>
             </fieldset>
         </form>
+    
 
         <h2>The form tag has an "action" attribute. What does it do?</h2>
             <p> it defines the action that needs to be performed when the form is submitted</p>
@@ -67,10 +68,46 @@
             <p>We can style using CSS for specific elements and also using selectors  like hover and focus.</p>
         <h2>Why does the professor like to use flex?</h2>
             <P> He likes it because it is more easy and effecient to layout our page and it can make the page look good in few steps.</P>
+        <hr>
+
+        <h2>What is JavaScript? How did it get its name?</h2>
+            <p> JavaScript is a programming language to create interactive on web pages. It was originally called Livescript but changed to Javascript to make Java popular even they are unrelated.Netscape and Eich designed the Javascript.</p>
+        <h2>What are the two ways you can run JavaScript?</h2>
+             <p> 1. In the DOM, run directly in web browsers in the frontend.<br> 2. Node.js, run on  a server tu build server side application and backend process. </p>
+        <h2>What was the most popular front-end js library?</h2>
+            <p> jQuery was the most popular. It is unified and not needed to create two javascripts for a page</p>
+        <h2>What is the most popular front-end js library today?</h2>
+            <p>React is the most popular font-end js today.</p>
     </main>
     <footer>
         <p>&copy; Gordon Guntu 2025</p>
     </footer>
+     <script>
+        document.getElementById("myForm").addEventListener('submit',function(event){
+            event.preventDefault();
+            alert( "Form Submitted");
+             if(fullname){
+                alert("You need to enter your name");
+                return;
+             }
 
+             const fullname = document.getElementById('fullname').value;
+             const email = document.getElementById('email').value;
+             const pass = document.getElementById('pass').value;
+     
+             
+
+           
+             const formdata = {
+                fullname: fullname,
+                email: email,
+                password: pass
+
+             }
+            console.log(formData);
+
+
+        });
+     </script>
 </body>
 </html>
