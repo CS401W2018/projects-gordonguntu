@@ -78,36 +78,19 @@
             <p> jQuery was the most popular. It is unified and not needed to create two javascripts for a page</p>
         <h2>What is the most popular front-end js library today?</h2>
             <p>React is the most popular font-end js today.</p>
+
+      <hr>
+      <h2>What is AJAX?</h2>
+      <p> AJAX iS a combination of a browser to request datat from a web server and a  javascript to display or use the data.It makes web applications more responsive to user interaction.</p>
+
+      <h2>Why do you put your JS Code in a separate file?</h2>
+      <p> It seperates the html and core and easier to maintain and read the javascript and html. It can load pages more quickly.</p>
+        
     </main>
     <footer>
         <p>&copy; Gordon Guntu 2025</p>
     </footer>
-     <script>
-        document.getElementById("myForm").addEventListener('submit',function(event){
-            event.preventDefault();
-            alert( "Form Submitted");
-             if(fullname){
-                alert("You need to enter your name");
-                return;
-             }
+     <script src = "form.js"></script>
 
-             const fullname = document.getElementById('fullname').value;
-             const email = document.getElementById('email').value;
-             const pass = document.getElementById('pass').value;
-     
-             
-
-           
-             const formdata = {
-                fullname: fullname,
-                email: email,
-                password: pass
-
-             }
-            console.log(formData);
-
-
-        });
-     </script>
 </body>
 </html>
