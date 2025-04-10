@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
@@ -13,18 +14,65 @@
     <nav>
         <a href="index.html"> Home</a>
         <a href="page1.html"> IPL Franchises</a>
-        <a href="page2.html">Famous Players</a>
+        <a href="page2.html">IPL Stats</a>
         <a href="page3.html">Favorite </a>
-        <a href="page4.html"> Current Season</a>
+        <a href="page4.html"> Famous Players</a>
         <a href="page5.html"> Fan Prediction</a>
 
     </nav>
     <main>
-
+        <form action="form.html" method="get" id="myform">
+            <fieldset>
+                <legend>Fan Prediction</legend>
+                <div class="form-row">
+                    <label for="fullname">Name:</label>
+                <input type="text" name="fullname" placeholder="full name" id="fullname"> 
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="radio-row">
+                   
+                    <div class="form-spacer">Favorite Team:</div>
+                    <label><input type="radio" name="team" value="RCB"> RCB </label>
+                    <label><input type="radio" name="team" value="CSK"> CSK </label>    
+                    <label><input type="radio" name="team" value="KKR"> KKR </label>
+                    <label><input type="radio" name="team" value="LSG"> LSG </label>
+                    <label><input type="radio" name="team" value="GT"> GT </label>
+                    <label><input type="radio" name="team" value="SRH"> SRH </label>
+                    <label><input type="radio" name="team" value="PBKS"> PBKS </label>
+                    <label><input type="radio" name="team" value="RR"> RR</label>
+                    <label><input type="radio" name="team" value="DC"> DC </label>
+                    <label><input type="radio" name="team" value="MI"> MI </label>
+                </div>
+                <div class="form-row">
+                    <label for="city"> Who will be the champions in 2025</label>
+                    <select name="state" id="city">
+                        <option value="blank"></option>
+                        <option value=" RCB"> RCB</option>
+                        <option value="CSK">CSK </option>
+                        <option value="LSG "> LSG </option>
+                        <option value="GT"> GT</option>
+                        <option value="SRH"> SRH</option>
+                        <option value="PBKS "> PBKS </option>
+                        <option value="RR"> RR</option>
+                        <option value="DC"> DC</option>
+                        <option value="MI"> MI</option>
+                        <option value="KKR"> KKR</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                <input type="submit">
+            </div>
+            </fieldset>
+        </form>
     </main>
     <footer>
         &copy; Gordon Guntu 2025
     </footer>
+    <script src="final.js"></script>
     
 </body>
 </html>

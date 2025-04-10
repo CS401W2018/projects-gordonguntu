@@ -42,6 +42,12 @@ nav a:hover {
         nav a {
             border-bottom: thin solid rgb(15, 15, 15);
         }
+        .form-row, .radio-row{
+            flex-direction: column;
+        }
+        .form-row label{
+            text-align: left;
+        }
        
     }
 
@@ -80,4 +86,47 @@ nav a:hover {
 .schedule tbody tr:nth-child(odd){
     background-color: beige;
 
+}
+
+fieldset{
+    background-color: rgb(115, 179, 179);
+}
+
+legend{
+    background-color: rgb(250, 94, 94);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.form-row input:not([type="submit"]){
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-row input:not([type="submit"]):focus {
+    background-color: rgb(231, 95, 71); 
+}
+
+
+.form-row{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.radio-row{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row label{
+    width: 130px;
+    text-align: right;
+}
+
+.form-spacer{
+    text-align: right;
+    width: 130px
 }
