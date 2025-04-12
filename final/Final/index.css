@@ -39,6 +39,7 @@ nav a:hover {
         }
         nav{
             flex-direction: column;
+            align-items: center;
         }
     
         nav a {
@@ -59,6 +60,15 @@ nav a:hover {
            height: fit-content;
            width: fit-content;
         }
+
+        .love{
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+       
        
     }
 
@@ -69,9 +79,14 @@ nav a:hover {
     border-spacing: 0px ;
     caption-side: top ;
     border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    
+   
 
      
 }
+
 
 .schedule tr{
     background-color: rgb(232, 240, 237);
@@ -99,6 +114,10 @@ nav a:hover {
 
 }
 
+caption{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 fieldset{
     background-color: rgb(115, 179, 179);
 }
@@ -146,7 +165,7 @@ legend{
     border: thin solid rgb(0, 0, 0);
     box-shadow: 3px 3px 3px  ;
     margin: 10px;
-    background-color: red;
+    background-color: rgb(249, 124, 124);
     display:flex;
     flex-direction: column;
     height: 650px;
@@ -155,6 +174,7 @@ legend{
 img{
     height: 370px;
     width: 400px;
+    object-fit: cover
 }
 
 
@@ -162,4 +182,61 @@ img{
     display: flex;
 
 
+
+}
+
+.current{
+    color: black;
+    background-color: brown;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height:100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.love{
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.love img {
+    width: max-content;
+    border-radius: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000%;
+    height: 100%;
+
+   
+    
+ 
+    
+    
+    
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
 }
