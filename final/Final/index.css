@@ -3,7 +3,9 @@ header{
     background-color: rgb(18, 148, 255);
     
 }
-
+    body{
+        background-color: rgb(236, 233, 233);
+    }
 p{
     font-size: 25px;
 }
@@ -47,6 +49,15 @@ nav a:hover {
         }
         .form-row label{
             text-align: left;
+        }
+        .pictures{
+            display: flex;
+            flex-direction: column;
+        }
+
+        img{
+           height: fit-content;
+           width: fit-content;
         }
        
     }
@@ -129,4 +140,26 @@ legend{
 .form-spacer{
     text-align: right;
     width: 130px
+}
+
+.card{ 
+    border: thin solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px  ;
+    margin: 10px;
+    background-color: red;
+    display:flex;
+    flex-direction: column;
+    height: 650px;
+    
+}
+img{
+    height: 370px;
+    width: 400px;
+}
+
+
+.pictures{ 
+    display: flex;
+
+
 }
